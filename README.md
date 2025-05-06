@@ -124,6 +124,16 @@ routes/
 - **dotenv**: Environment variable management.
 - **cors**: Middleware for handling CORS.
 
+## Testing
+
+To ensure the application works as expected, you can run tests for the API endpoints. Follow these steps:
+
+### **Run the tests**:
+
+```bash
+npm test
+```
+
 ## License
 
 This project is licensed under the ISC License.
