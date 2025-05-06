@@ -12,14 +12,16 @@ This is a simple backend for a Todo application built with Node.js, Express, and
 
 ## Project Structure
 
+```
 .env
 .gitignore
 app.js
 package.json
 models/
-Todo.js
+└── Todo.js
 routes/
-todos.js
+└── todos.js
+```
 
 ## Prerequisites
 
@@ -28,33 +30,47 @@ todos.js
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/Ibrakara/todo-app-be.git
    cd todo-app-be
    ```
 
-2. Install dependencies:
+2. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-3. Create a `.env` file in the root directory and configure the following variables:
+3. **Start your local MongoDB server**:
+
+   Make sure MongoDB is installed. You can start it using:
+
+   ```bash
+   brew services start mongodb-community@7.0
+   ```
+
+   > If you prefer manual startup, run:
+   >
+   > ```bash
+   > mongod
+   > ```
+
+4. **Create a `.env` file** in the root directory with the following content:
 
    ```env
    PORT=3000
    MONGO_URI=mongodb://localhost:27017/todo-db
    ```
 
-4. Start the development server:
+5. **Start the development server**:
 
    ```bash
    npm run dev
    ```
 
-5. The server will run on `http://localhost:3000` by default.
+6. The server will run on `http://localhost:3000` by default.
 
 ## API Endpoints
 
