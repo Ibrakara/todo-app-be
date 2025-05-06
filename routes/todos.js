@@ -1,8 +1,8 @@
-import express from "express";
-import Todo from "../models/Todo.js";
-import mongoose from "mongoose";
+const express = require("express");
+const Todo = require("../models/Todo.js");
+const mongoose = require("mongoose");
 
-export const router = express.Router();
+const router = express.Router();
 
 // Get All
 router.get("/", async (req, res) => {
@@ -68,3 +68,4 @@ router.delete("/:id", async (req, res) => {
     res.status(400).json({ error: err.message });
   }
 });
+module.exports = router; // Ensure the router is exported correctly
